@@ -13446,7 +13446,8 @@ a.box-99:focus {
 }
 
 #Home {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+    background: linear-gradient(-45deg,#81ffff, #75ff8b, #4910f1);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
