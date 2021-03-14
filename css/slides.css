@@ -2066,7 +2066,7 @@ html.mobile .showForMobileInline {
 
 .slides.whiteSlide .panel svg {
     /*fill: #202020;*/
-    fill: url(#gradient-vertical) #673ab7;
+    fill: url(#gradient-vertical) #000;
 }
 
 .panel .button {
@@ -13455,6 +13455,12 @@ a.box-99:focus {
     content: "";
     clear: both;
     display: table;
+}
+
+.colorHeader {
+    background: -webkit-linear-gradient(0deg, #55ff99, #5599ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #Home {
