@@ -241,7 +241,7 @@ img.rounded {
         }
 
 .button {
-    border-radius: 3px;
+    border-radius: 25px;
     padding: 14px 22px;
     color: #fff;
     border: none;
@@ -1322,7 +1322,7 @@ img.rounded {
 
 .slide {
     position: fixed;
-    background: #202020;
+    background: #383838;
     color: #fff;
     z-index: 10;
 }
@@ -2053,8 +2053,20 @@ html.mobile .showForMobileInline {
     max-width: none;
 }
 
+#gradient-horizontal {
+    --color-stop-1: #a770ef;
+    --color-stop-2: #cf8bf3;
+    --color-stop-3: #fdb99b;
+}
+
+#gradient-vertical {
+    --color-stop-1: #55ff99;
+    --color-stop-2: #5599ff;
+}
+
 .slides.whiteSlide .panel svg {
-    fill: #202020;
+    /*fill: #202020;*/
+    fill: url(#gradient-vertical) #673ab7;
 }
 
 .panel .button {
@@ -7257,7 +7269,7 @@ form input[type="text"].input-13 {
     .ipad-31,
     .ipad-32,
     .ipad-33 {
-        margin: -10% 0 -115%;
+        margin: -10% 0 -100%;
         max-width: none;
     }
 

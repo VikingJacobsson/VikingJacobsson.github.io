@@ -71,30 +71,118 @@
             border-radius: 2px;
         }
     </style>
+    <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false">
+        <linearGradient id="gradient-horizontal">
+            <stop offset="0%" stop-color="var(--color-stop-1)" />
+            <stop offset="50%" stop-color="var(--color-stop-2)" />
+            <stop offset="100%" stop-color="var(--color-stop-3)" />
+        </linearGradient>
+        <linearGradient id="gradient-vertical" x2="0" y2="1">
+            <stop offset="0%" stop-color="var(--color-stop-1)" />
+            <stop offset="100%" stop-color="var(--color-stop-2)" />
+        </linearGradient>
+    </svg>
+
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none" id="customSvgLibrary">
         <!--<symbol id="logo" viewBox="0 0 315 40">
-                <path d="M267.9 37c-.2 0-.2-.2-.3-.3-1.3-2.1-2.6-4.1-3.9-6.2-.2-.3-.3-.4-.6-.3-.6.2-1.2.3-1.8.3-.3 0-.4.1-.5.4-.4 1.7-.8 3.4-1.2 5 0 .1 0 .2-.2.3-.3-1.1-.6-2.2-.8-3.3-.2-.7-.3-1.4-.5-2.1 0-.2-.1-.3-.4-.4-.6 0-1.3-.2-1.9-.4-.3-.1-.4 0-.6.2-1.3 2.1-2.7 4.2-4 6.3-.1.1-.1.3-.3.3 0-.3.1-.5.1-.8l1.5-6.9c.1-.3 0-.5-.3-.6-.5-.3-1-.6-1.5-1-.2-.2-.4-.2-.6 0-1.4.9-2.9 1.7-4.3 2.6-.1.1-.2.1-.3.2-.1-.2 0-.2.1-.3.9-1.4 1.7-2.9 2.6-4.3.2-.3.1-.4 0-.6-.4-.5-.7-1-1-1.5-.1-.2-.3-.3-.5-.2-2.5.6-5 1.1-7.6 1.7h-.1c0-.2.1-.2.2-.3 2.1-1.3 4.2-2.7 6.3-4 .3-.2.4-.3.3-.7-.2-.6-.3-1.1-.3-1.7 0-.3-.1-.4-.4-.5-1.7-.4-3.4-.8-5-1.2-.1 0-.2-.1-.4-.1.7-.2 1.4-.4 2-.5 1.1-.3 2.3-.6 3.4-.8.2-.1.4-.2.4-.4 0-.6.2-1.2.4-1.8.1-.3 0-.4-.2-.5-2.1-1.3-4.2-2.7-6.4-4.1-.1-.1-.2-.1-.3-.3.6.1 1.2.2 1.8.4 2 .4 4 .9 6 1.4.3.1.4 0 .5-.2.3-.6.6-1.1 1.1-1.5.2-.2.2-.3 0-.6-1-1.6-1.9-3.1-2.9-4.7.2 0 .3.1.5.2 1.5.9 6.3 4.2 6.2 4.3-2.4 1.4-3.8 4.1-4.4 7.1-1.1 5.1 1.4 10.3 6 12.8 7 3.8 15.6-.2 17.3-8 1-4.5-1.3-8.6-4.4-11.8 0 0 4.7-3.4 6.1-4.2.1-.1.3-.2.4-.2.1.1 0 .2-.1.3-.9 1.4-1.7 2.9-2.6 4.3-.1.2-.2.4 0 .6.4.5.8 1 1.1 1.6.1.2.2.3.5.2 2.5-.6 4.9-1.1 7.4-1.7h.4c-.1.1-.2.2-.4.3-2.1 1.3-4.2 2.7-6.2 4-.3.2-.4.4-.3.7.2.5.3 1.1.3 1.6 0 .3.2.5.5.6 1.7.4 3.3.8 5 1.2.1 0 .2.1.3.1-.7.2-1.4.4-2 .5-1.1.3-2.3.6-3.4.8-.2 0-.3.1-.4.4-.1.7-.2 1.4-.4 2-.1.3.1.3.3.4 1.8 1.1 3.6 2.3 5.4 3.4.4.3.8.5 1.2.8v.1c-.7-.1-1.3-.3-2-.4-1.9-.4-3.8-.9-5.7-1.3-.2 0-.4 0-.5.2-.3.5-.6 1.1-1 1.5-.2.2-.2.4 0 .7.9 1.4 1.7 2.8 2.5 4.2.1.1.2.2.2.4-.1 0-.2-.1-.3-.1-1.5-.9-2.9-1.7-4.3-2.6-.2-.1-.4-.1-.6 0-.5.4-1 .7-1.5 1-.2.1-.3.3-.2.5.6 2.5 1.1 4.9 1.7 7.4-.2 0-.1.1-.2.1z"/>
-                <path d="M259.5 10.4c3.5 0 6.3 2.9 6.3 6.3 0 3.5-2.9 6.3-6.4 6.3-3.5 0-6.3-2.9-6.3-6.3.1-3.4 2.9-6.3 6.4-6.3z" fill="#faa819"/>
-                <path d="M21.5 15.6c.7.6 1.3 1.3 1.7 2.2.4.9.6 1.8.6 2.8 0 1.2-.3 2.2-.9 3.2-.6 1-1.3 1.7-2.3 2.3-1 .6-2 .9-3.2.9H1.5v-4.1h16.1c.6 0 1.1-.2 1.6-.7.4-.4.7-1 .7-1.6 0-.6-.2-1.1-.7-1.6-.4-.4-1-.7-1.6-.7H1.5v-4.1h15c.5 0 1-.2 1.3-.6.4-.4.6-.8.6-1.3s-.2-1-.6-1.3c-.4-.4-.8-.6-1.3-.6h-15V6.3h15c1.1 0 2.1.3 3 .8.9.5 1.6 1.3 2.2 2.2.5.9.8 1.9.8 3 0 1.2-.3 2.3-1 3.3zM41.5 6.3h4.1v16.4h17.8v4.1H41.5V6.3zM87.5 23.5l-1.8 3.4H81L92 6.3h4.3l11.1 20.5h-4.7l-1.8-3.4H87.5zM94.2 11l-4.5 8.3h9L94.2 11zM122.4 18.7v-4.1c0-2.2.8-4.1 2.4-5.8 1.7-1.6 3.6-2.4 5.8-2.4h7.5c2.2 0 4.1.8 5.8 2.4 1.5 1.5 2.3 3.3 2.4 5.5h-4.1c-.1-1.1-.6-2-1.3-2.7-.8-.7-1.7-1.1-2.8-1.1h-7.5c-1.1 0-2.1.4-2.9 1.2-.8.8-1.2 1.8-1.2 2.9v4.1c0 1.1.4 2.1 1.2 2.9.8.8 1.8 1.2 2.9 1.2h7.5c1.1 0 2-.4 2.8-1.1.8-.7 1.2-1.6 1.3-2.7h4.1c-.1 2.1-.9 3.9-2.4 5.5-1.7 1.6-3.6 2.4-5.8 2.4h-7.5c-2.2 0-4.1-.8-5.8-2.4-1.6-1.7-2.4-3.6-2.4-5.8zM175.8 14.5l13 12.4h-6l-10.7-10.2-4.2 2.7v7.5h-4.1V6.3h4.1v8.2l13-8.2h7.7l-12.8 8.2zM207.1 17.1c-.7-.6-1.2-1.3-1.6-2.1-.4-.8-.6-1.7-.6-2.5 0-1.1.3-2.2.8-3.1.6-.9 1.3-1.7 2.2-2.2.9-.6 2-.8 3.1-.8h17.1v4.1H211c-.6 0-1 .2-1.4.6-.4.4-.6.9-.6 1.4 0 .6.2 1.1.7 1.5.3.3.8.4 1.3.5.5.1 1.1.1 1.8.1h8.7c.6 0 1.3 0 2 .1s1.4.3 2.1.6c1.8.9 2.9 2.4 3.3 4.3.2.9.1 1.8-.1 2.7-.2 1-.7 1.8-1.4 2.5-.6.7-1.3 1.2-2.1 1.5-.8.4-1.6.5-2.5.5h-17.5v-4.1h17.5c.6 0 1-.2 1.5-.7.4-.5.6-1.1.5-1.8-.1-.7-.5-1.1-1-1.4-.6-.2-1.4-.3-2.3-.3H212.6c-.9 0-1.8-.1-2.8-.2-.8 0-1.7-.5-2.7-1.2zM292.6 11.3v15.6h-4.1V6.3h5L309.4 22V6.3h4.1v20.5h-5l-15.9-15.5z"/>
-        </symbol>-->
+            <path d="M267.9 37c-.2 0-.2-.2-.3-.3-1.3-2.1-2.6-4.1-3.9-6.2-.2-.3-.3-.4-.6-.3-.6.2-1.2.3-1.8.3-.3 0-.4.1-.5.4-.4 1.7-.8 3.4-1.2 5 0 .1 0 .2-.2.3-.3-1.1-.6-2.2-.8-3.3-.2-.7-.3-1.4-.5-2.1 0-.2-.1-.3-.4-.4-.6 0-1.3-.2-1.9-.4-.3-.1-.4 0-.6.2-1.3 2.1-2.7 4.2-4 6.3-.1.1-.1.3-.3.3 0-.3.1-.5.1-.8l1.5-6.9c.1-.3 0-.5-.3-.6-.5-.3-1-.6-1.5-1-.2-.2-.4-.2-.6 0-1.4.9-2.9 1.7-4.3 2.6-.1.1-.2.1-.3.2-.1-.2 0-.2.1-.3.9-1.4 1.7-2.9 2.6-4.3.2-.3.1-.4 0-.6-.4-.5-.7-1-1-1.5-.1-.2-.3-.3-.5-.2-2.5.6-5 1.1-7.6 1.7h-.1c0-.2.1-.2.2-.3 2.1-1.3 4.2-2.7 6.3-4 .3-.2.4-.3.3-.7-.2-.6-.3-1.1-.3-1.7 0-.3-.1-.4-.4-.5-1.7-.4-3.4-.8-5-1.2-.1 0-.2-.1-.4-.1.7-.2 1.4-.4 2-.5 1.1-.3 2.3-.6 3.4-.8.2-.1.4-.2.4-.4 0-.6.2-1.2.4-1.8.1-.3 0-.4-.2-.5-2.1-1.3-4.2-2.7-6.4-4.1-.1-.1-.2-.1-.3-.3.6.1 1.2.2 1.8.4 2 .4 4 .9 6 1.4.3.1.4 0 .5-.2.3-.6.6-1.1 1.1-1.5.2-.2.2-.3 0-.6-1-1.6-1.9-3.1-2.9-4.7.2 0 .3.1.5.2 1.5.9 6.3 4.2 6.2 4.3-2.4 1.4-3.8 4.1-4.4 7.1-1.1 5.1 1.4 10.3 6 12.8 7 3.8 15.6-.2 17.3-8 1-4.5-1.3-8.6-4.4-11.8 0 0 4.7-3.4 6.1-4.2.1-.1.3-.2.4-.2.1.1 0 .2-.1.3-.9 1.4-1.7 2.9-2.6 4.3-.1.2-.2.4 0 .6.4.5.8 1 1.1 1.6.1.2.2.3.5.2 2.5-.6 4.9-1.1 7.4-1.7h.4c-.1.1-.2.2-.4.3-2.1 1.3-4.2 2.7-6.2 4-.3.2-.4.4-.3.7.2.5.3 1.1.3 1.6 0 .3.2.5.5.6 1.7.4 3.3.8 5 1.2.1 0 .2.1.3.1-.7.2-1.4.4-2 .5-1.1.3-2.3.6-3.4.8-.2 0-.3.1-.4.4-.1.7-.2 1.4-.4 2-.1.3.1.3.3.4 1.8 1.1 3.6 2.3 5.4 3.4.4.3.8.5 1.2.8v.1c-.7-.1-1.3-.3-2-.4-1.9-.4-3.8-.9-5.7-1.3-.2 0-.4 0-.5.2-.3.5-.6 1.1-1 1.5-.2.2-.2.4 0 .7.9 1.4 1.7 2.8 2.5 4.2.1.1.2.2.2.4-.1 0-.2-.1-.3-.1-1.5-.9-2.9-1.7-4.3-2.6-.2-.1-.4-.1-.6 0-.5.4-1 .7-1.5 1-.2.1-.3.3-.2.5.6 2.5 1.1 4.9 1.7 7.4-.2 0-.1.1-.2.1z"/>
+            <path d="M259.5 10.4c3.5 0 6.3 2.9 6.3 6.3 0 3.5-2.9 6.3-6.4 6.3-3.5 0-6.3-2.9-6.3-6.3.1-3.4 2.9-6.3 6.4-6.3z" fill="#faa819"/>
+            <path d="M21.5 15.6c.7.6 1.3 1.3 1.7 2.2.4.9.6 1.8.6 2.8 0 1.2-.3 2.2-.9 3.2-.6 1-1.3 1.7-2.3 2.3-1 .6-2 .9-3.2.9H1.5v-4.1h16.1c.6 0 1.1-.2 1.6-.7.4-.4.7-1 .7-1.6 0-.6-.2-1.1-.7-1.6-.4-.4-1-.7-1.6-.7H1.5v-4.1h15c.5 0 1-.2 1.3-.6.4-.4.6-.8.6-1.3s-.2-1-.6-1.3c-.4-.4-.8-.6-1.3-.6h-15V6.3h15c1.1 0 2.1.3 3 .8.9.5 1.6 1.3 2.2 2.2.5.9.8 1.9.8 3 0 1.2-.3 2.3-1 3.3zM41.5 6.3h4.1v16.4h17.8v4.1H41.5V6.3zM87.5 23.5l-1.8 3.4H81L92 6.3h4.3l11.1 20.5h-4.7l-1.8-3.4H87.5zM94.2 11l-4.5 8.3h9L94.2 11zM122.4 18.7v-4.1c0-2.2.8-4.1 2.4-5.8 1.7-1.6 3.6-2.4 5.8-2.4h7.5c2.2 0 4.1.8 5.8 2.4 1.5 1.5 2.3 3.3 2.4 5.5h-4.1c-.1-1.1-.6-2-1.3-2.7-.8-.7-1.7-1.1-2.8-1.1h-7.5c-1.1 0-2.1.4-2.9 1.2-.8.8-1.2 1.8-1.2 2.9v4.1c0 1.1.4 2.1 1.2 2.9.8.8 1.8 1.2 2.9 1.2h7.5c1.1 0 2-.4 2.8-1.1.8-.7 1.2-1.6 1.3-2.7h4.1c-.1 2.1-.9 3.9-2.4 5.5-1.7 1.6-3.6 2.4-5.8 2.4h-7.5c-2.2 0-4.1-.8-5.8-2.4-1.6-1.7-2.4-3.6-2.4-5.8zM175.8 14.5l13 12.4h-6l-10.7-10.2-4.2 2.7v7.5h-4.1V6.3h4.1v8.2l13-8.2h7.7l-12.8 8.2zM207.1 17.1c-.7-.6-1.2-1.3-1.6-2.1-.4-.8-.6-1.7-.6-2.5 0-1.1.3-2.2.8-3.1.6-.9 1.3-1.7 2.2-2.2.9-.6 2-.8 3.1-.8h17.1v4.1H211c-.6 0-1 .2-1.4.6-.4.4-.6.9-.6 1.4 0 .6.2 1.1.7 1.5.3.3.8.4 1.3.5.5.1 1.1.1 1.8.1h8.7c.6 0 1.3 0 2 .1s1.4.3 2.1.6c1.8.9 2.9 2.4 3.3 4.3.2.9.1 1.8-.1 2.7-.2 1-.7 1.8-1.4 2.5-.6.7-1.3 1.2-2.1 1.5-.8.4-1.6.5-2.5.5h-17.5v-4.1h17.5c.6 0 1-.2 1.5-.7.4-.5.6-1.1.5-1.8-.1-.7-.5-1.1-1-1.4-.6-.2-1.4-.3-2.3-.3H212.6c-.9 0-1.8-.1-2.8-.2-.8 0-1.7-.5-2.7-1.2zM292.6 11.3v15.6h-4.1V6.3h5L309.4 22V6.3h4.1v20.5h-5l-15.9-15.5z"/>
+    </symbol>-->
+
         <symbol id="logo" viewBox="0 0 13.758333 1.5875"
                 height="50">
-            <g id="g5187">
-                <path d="m 1.8601972,0.16257205 q 0.042333,-0.0508 0.1044223,-0.0508 0.056444,0 0.095956,0.0395 0.039511,0.0395 0.039511,0.096 0,0.0508 -0.028222,0.0818 l -0.00282,0.003 -0.6829778,0.92004005 q -0.0508,0.0649 -0.1298222,0.10724 -0.0762,0.0395 -0.1665111,0.0395 -0.084667,0 -0.16086671,-0.0367 -0.0733778,-0.0367 -0.12417778,-0.1016 l -0.6858,-0.91723005 q -0.0169333,-0.0197 -0.02822222,-0.0423 -0.01128889,-0.0254 -0.01128889,-0.0536 0,-0.0564 0.03951111,-0.096 0.0395111,-0.0395 0.0959556,-0.0395 0.0677333,0 0.10724444,0.0536 L 0.97966673,1.0432421 q 0.0197556,0.0226 0.0479778,0.0508 0.031044,0.0254 0.062089,0.0254 0.031044,0 0.059267,-0.0254 0.031045,-0.0282 0.047978,-0.0508 z"
-                      id="path841" />
-                <path d="m 2.9344078,1.09396 q 0,-0.0734 0.0508,-0.12418 0.0508,-0.0508 0.1241777,-0.0508 0.073378,0 0.1241778,0.0508 0.0508,0.0508 0.0508,0.12418 0,0.0734 -0.0508,0.12418 -0.0508,0.0508 -0.1241778,0.0508 -0.073378,0 -0.1241777,-0.0508 -0.0508,-0.0508 -0.0508,-0.12418 z m -0.5954889,0.254 q -0.042333,0.0508 -0.1044222,0.0508 -0.056444,0 -0.095956,-0.0395 -0.039511,-0.0395 -0.039511,-0.096 0,-0.0508 0.028222,-0.0818 l 0.6858,-0.92287 q 0.047978,-0.0649 0.127,-0.10442 0.079022,-0.0423 0.1693333,-0.0423 0.084667,0 0.1608667,0.0367 0.0762,0.0367 0.1241778,0.1016 l 0.6858,0.91722 q 0.016933,0.0197 0.028222,0.0451 0.011289,0.0226 0.011289,0.0508 0,0.0565 -0.039511,0.096 -0.039511,0.0395 -0.095956,0.0395 -0.067733,0 -0.1072444,-0.0536 L 3.2194513,0.46748 q -0.019756,-0.0226 -0.0508,-0.048 -0.028222,-0.0282 -0.059267,-0.0282 -0.031044,0 -0.062089,0.0282 -0.028222,0.0254 -0.045156,0.048 z"
-                      id="path843" />
-                <path d="m 4.7875474,1.39876 q -0.079022,0 -0.1495778,-0.0282 -0.070556,-0.031 -0.1241778,-0.0818 -0.0508,-0.0508 -0.081844,-0.11853 -0.031044,-0.0677 -0.031044,-0.14675 V 0.30381 q 0,-0.0564 0.039511,-0.096 0.039511,-0.0395 0.095955,-0.0395 0.053622,0 0.093133,0.0395 0.042333,0.0395 0.042333,0.096 v 0.71967 q 0,0.0423 0.031044,0.0734 0.033867,0.031 0.0762,0.031 h 1.6933334 q 0.056444,0 0.095955,0.0395 0.039511,0.0395 0.039511,0.0959 0,0.0565 -0.039511,0.096 -0.039511,0.0395 -0.095955,0.0395 H 4.7875474 Z"
-                      id="path845" />
-                <path d="m 7.7277735,1.09396 q 0,-0.0734 0.0508,-0.12418 0.0508,-0.0508 0.1241778,-0.0508 0.073378,0 0.1241777,0.0508 0.0508,0.0508 0.0508,0.12418 0,0.0734 -0.0508,0.12418 -0.0508,0.0508 -0.1241777,0.0508 -0.073378,0 -0.1241778,-0.0508 -0.0508,-0.0508 -0.0508,-0.12418 z m -0.5954889,0.254 q -0.042333,0.0508 -0.1044222,0.0508 -0.056445,0 -0.095956,-0.0395 -0.039511,-0.0395 -0.039511,-0.096 0,-0.0508 0.028222,-0.0818 l 0.6858,-0.92287 q 0.047978,-0.0649 0.127,-0.10442 0.079022,-0.0423 0.1693334,-0.0423 0.084667,0 0.1608666,0.0367 0.0762,0.0367 0.1241778,0.1016 l 0.6858,0.91722 q 0.016933,0.0197 0.028222,0.0451 0.011289,0.0226 0.011289,0.0508 0,0.0565 -0.039511,0.096 -0.039511,0.0395 -0.095955,0.0395 -0.067733,0 -0.1072445,-0.0536 L 8.0128179,0.46748 q -0.019755,-0.0226 -0.0508,-0.048 -0.028222,-0.0282 -0.059267,-0.0282 -0.031045,0 -0.062089,0.0282 -0.028222,0.0254 -0.045156,0.048 z"
-                      id="path847" />
-                <path d="m 11.118409,0.30374 q 0,-0.0564 0.03951,-0.096 0.03951,-0.0395 0.09596,-0.0395 0.05644,0 0.09596,0.0395 0.03951,0.0395 0.03951,0.096 v 0.82127 q 0,0.11571 -0.07902,0.19473 -0.0762,0.079 -0.191911,0.079 -0.03951,0 -0.07902,-0.0113 -0.03669,-0.0113 -0.06773,-0.031 L 9.6790757,0.56621 q -0.053622,-0.031 -0.090311,-0.048 -0.033867,-0.0198 -0.056444,-0.0198 -0.042333,0 -0.053622,0.0536 -0.011289,0.0536 -0.011289,0.15523 v 0.55597 q 0,0.0565 -0.039511,0.096 -0.039511,0.0395 -0.095955,0.0395 -0.056445,0 -0.095956,-0.0395 -0.039511,-0.0395 -0.039511,-0.096 V 0.44195 q 0,-0.11571 0.0762,-0.19474 0.079022,-0.079 0.1947334,-0.079 0.039511,0 0.0762,0.0113 0.039511,0.0113 0.070556,0.0311 l 1.2925779,0.79022 q 0.05362,0.031 0.08749,0.0508 0.03669,0.0169 0.05927,0.0169 0.04233,0 0.05362,-0.0536 0.01129,-0.0536 0.01129,-0.15522 V 0.30373 Z"
-                      id="path849" />
-                <path d="m 12.50681,1.09396 q 0,-0.0734 0.0508,-0.12418 0.0508,-0.0508 0.124178,-0.0508 0.07338,0 0.124178,0.0508 0.0508,0.0508 0.0508,0.12418 0,0.0734 -0.0508,0.12418 -0.0508,0.0508 -0.124178,0.0508 -0.07338,0 -0.124178,-0.0508 -0.0508,-0.0508 -0.0508,-0.12418 z m -0.595489,0.254 q -0.04233,0.0508 -0.104422,0.0508 -0.05645,0 -0.09596,-0.0395 -0.03951,-0.0395 -0.03951,-0.096 0,-0.0508 0.02822,-0.0818 l 0.6858,-0.92287 q 0.04798,-0.0649 0.127,-0.10442 0.07902,-0.0423 0.169334,-0.0423 0.08467,0 0.160866,0.0367 0.0762,0.0367 0.124178,0.1016 l 0.6858,0.91722 q 0.01693,0.0197 0.02822,0.0451 0.01129,0.0226 0.01129,0.0508 0,0.0565 -0.03951,0.096 -0.03951,0.0395 -0.09596,0.0395 -0.06773,0 -0.107245,-0.0536 L 12.791844,0.46748 q -0.01975,-0.0226 -0.0508,-0.048 -0.02822,-0.0282 -0.05927,-0.0282 -0.03104,0 -0.06209,0.0282 -0.02822,0.0254 -0.04516,0.048 z"
-                      id="path851" />
+            <g transform="translate(0,-295.41249)"
+               id="layer1">
+                <path id="path841"
+                      d="m 1.8601972,295.63156 q 0.042333,-0.0508 0.1044223,-0.0508 0.056444,0 0.095956,0.0395 0.039511,0.0395 0.039511,0.096 0,0.0508 -0.028222,0.0818 l -0.00282,0.003 -0.6829778,0.92004 q -0.0508,0.0649 -0.1298222,0.10724 -0.0762,0.0395 -0.1665111,0.0395 -0.084667,0 -0.16086671,-0.0367 -0.0733778,-0.0367 -0.12417778,-0.1016 l -0.6858,-0.91723 q -0.0169333,-0.0197 -0.02822222,-0.0423 -0.01128889,-0.0254 -0.01128889,-0.0536 0,-0.0564 0.03951111,-0.096 0.0395111,-0.0395 0.0959556,-0.0395 0.0677333,0 0.10724444,0.0536 l 0.65757778,0.87772 q 0.0197556,0.0226 0.0479778,0.0508 0.031044,0.0254 0.062089,0.0254 0.031044,0 0.059267,-0.0254 0.031045,-0.0282 0.047978,-0.0508 z" />
+                <path id="path843"
+                      d="m 2.9344078,296.50645 q 0,-0.0734 0.0508,-0.12418 0.0508,-0.0508 0.1241777,-0.0508 0.073378,0 0.1241778,0.0508 0.0508,0.0508 0.0508,0.12418 0,0.0734 -0.0508,0.12418 -0.0508,0.0508 -0.1241778,0.0508 -0.073378,0 -0.1241777,-0.0508 -0.0508,-0.0508 -0.0508,-0.12418 z m -0.5954889,0.254 q -0.042333,0.0508 -0.1044222,0.0508 -0.056444,0 -0.095956,-0.0395 -0.039511,-0.0395 -0.039511,-0.096 0,-0.0508 0.028222,-0.0818 l 0.6858,-0.92287 q 0.047978,-0.0649 0.127,-0.10442 0.079022,-0.0423 0.1693333,-0.0423 0.084667,0 0.1608667,0.0367 0.0762,0.0367 0.1241778,0.1016 l 0.6858,0.91722 q 0.016933,0.0197 0.028222,0.0451 0.011289,0.0226 0.011289,0.0508 0,0.0565 -0.039511,0.096 -0.039511,0.0395 -0.095956,0.0395 -0.067733,0 -0.1072444,-0.0536 l -0.6575778,-0.87771 q -0.019756,-0.0226 -0.0508,-0.048 -0.028222,-0.0282 -0.059267,-0.0282 -0.031044,0 -0.062089,0.0282 -0.028222,0.0254 -0.045156,0.048 z" />
+                <path id="path845"
+                      d="m 4.7875474,296.81125 q -0.079022,0 -0.1495778,-0.0282 -0.070556,-0.031 -0.1241778,-0.0818 -0.0508,-0.0508 -0.081844,-0.11853 -0.031044,-0.0677 -0.031044,-0.14675 v -0.71967 q 0,-0.0564 0.039511,-0.096 0.039511,-0.0395 0.095955,-0.0395 0.053622,0 0.093133,0.0395 0.042333,0.0395 0.042333,0.096 v 0.71967 q 0,0.0423 0.031044,0.0734 0.033867,0.031 0.0762,0.031 h 1.6933334 q 0.056444,0 0.095955,0.0395 0.039511,0.0395 0.039511,0.0959 0,0.0565 -0.039511,0.096 -0.039511,0.0395 -0.095955,0.0395 H 4.7875474 Z" />
+                <path id="path847"
+                      d="m 7.7277735,296.50645 q 0,-0.0734 0.0508,-0.12418 0.0508,-0.0508 0.1241778,-0.0508 0.073378,0 0.1241777,0.0508 0.0508,0.0508 0.0508,0.12418 0,0.0734 -0.0508,0.12418 -0.0508,0.0508 -0.1241777,0.0508 -0.073378,0 -0.1241778,-0.0508 -0.0508,-0.0508 -0.0508,-0.12418 z m -0.5954889,0.254 q -0.042333,0.0508 -0.1044222,0.0508 -0.056445,0 -0.095956,-0.0395 -0.039511,-0.0395 -0.039511,-0.096 0,-0.0508 0.028222,-0.0818 l 0.6858,-0.92287 q 0.047978,-0.0649 0.127,-0.10442 0.079022,-0.0423 0.1693334,-0.0423 0.084667,0 0.1608666,0.0367 0.0762,0.0367 0.1241778,0.1016 l 0.6858,0.91722 q 0.016933,0.0197 0.028222,0.0451 0.011289,0.0226 0.011289,0.0508 0,0.0565 -0.039511,0.096 -0.039511,0.0395 -0.095955,0.0395 -0.067733,0 -0.1072445,-0.0536 l -0.6575778,-0.87771 q -0.019755,-0.0226 -0.0508,-0.048 -0.028222,-0.0282 -0.059267,-0.0282 -0.031045,0 -0.062089,0.0282 -0.028222,0.0254 -0.045156,0.048 z" />
+                <path id="path849"
+                      d="m 11.118409,295.71623 q 0,-0.0564 0.03951,-0.096 0.03951,-0.0395 0.09596,-0.0395 0.05644,0 0.09596,0.0395 0.03951,0.0395 0.03951,0.096 v 0.82127 q 0,0.11571 -0.07902,0.19473 -0.0762,0.079 -0.191911,0.079 -0.03951,0 -0.07902,-0.0113 -0.03669,-0.0113 -0.06773,-0.031 L 9.6790757,295.9787 q -0.053622,-0.031 -0.090311,-0.048 -0.033867,-0.0198 -0.056444,-0.0198 -0.042333,0 -0.053622,0.0536 -0.011289,0.0536 -0.011289,0.15523 v 0.55597 q 0,0.0565 -0.039511,0.096 -0.039511,0.0395 -0.095955,0.0395 -0.056445,0 -0.095956,-0.0395 -0.039511,-0.0395 -0.039511,-0.096 v -0.82126 q 0,-0.11571 0.0762,-0.19474 0.079022,-0.079 0.1947334,-0.079 0.039511,0 0.0762,0.0113 0.039511,0.0113 0.070556,0.0311 l 1.2925774,0.79022 q 0.05362,0.031 0.08749,0.0508 0.03669,0.0169 0.05927,0.0169 0.04233,0 0.05362,-0.0536 0.01129,-0.0536 0.01129,-0.15522 v -0.55598 z" />
+                <path id="path851"
+                      d="m 12.50681,296.50645 q 0,-0.0734 0.0508,-0.12418 0.0508,-0.0508 0.124178,-0.0508 0.07338,0 0.124178,0.0508 0.0508,0.0508 0.0508,0.12418 0,0.0734 -0.0508,0.12418 -0.0508,0.0508 -0.124178,0.0508 -0.07338,0 -0.124178,-0.0508 -0.0508,-0.0508 -0.0508,-0.12418 z m -0.595489,0.254 q -0.04233,0.0508 -0.104422,0.0508 -0.05645,0 -0.09596,-0.0395 -0.03951,-0.0395 -0.03951,-0.096 0,-0.0508 0.02822,-0.0818 l 0.6858,-0.92287 q 0.04798,-0.0649 0.127,-0.10442 0.07902,-0.0423 0.169334,-0.0423 0.08467,0 0.160866,0.0367 0.0762,0.0367 0.124178,0.1016 l 0.6858,0.91722 q 0.01693,0.0197 0.02822,0.0451 0.01129,0.0226 0.01129,0.0508 0,0.0565 -0.03951,0.096 -0.03951,0.0395 -0.09596,0.0395 -0.06773,0 -0.107245,-0.0536 l -0.657578,-0.87771 q -0.01975,-0.0226 -0.0508,-0.048 -0.02822,-0.0282 -0.05927,-0.0282 -0.03104,0 -0.06209,0.0282 -0.02822,0.0254 -0.04516,0.048 z" />
             </g>
 
         </symbol>
+
+        <symbol id="client1" viewBox="0 0 600 80"
+                height="200">
+            <g id="g872"
+               transform="translate(-25.7,-284.60001)">
+                <path class="st0"
+                      d="m 197.6,298.8 v 52.9 h 8.6 c 13.1,0 25.6,-9.8 25.6,-26.5 0,-16.7 -12.5,-26.5 -25.6,-26.5 h -8.6 z M 182,363.7 v -77.2 h 21.2 c 23.7,0 44.9,8.1 44.9,38.7 0,30.6 -21,38.8 -44.9,38.8 z"
+                      id="path4"
+                      inkscape:connector-curvature="0"
+                      style="fill:#cccccc" />
+                <polygon class="st0"
+                         points="253.6,298.8 253.6,286.6 305.4,286.6 305.4,299.1 268.7,351.5 306.3,351.5 306.3,363.7 252.2,363.7 252.2,351.2 288.7,298.8 "
+                         id="polygon6"
+                         style="fill:#cccccc" />
+                <path class="st0"
+                      d="m 336.7,363.7 v -77.2 h 27 c 10,0 25.1,2.8 25.1,19.8 0,9.2 -6.1,15.6 -15.6,17.3 10.6,1.1 17.8,8.4 17.8,17.8 0,19.5 -17.6,22.3 -27.3,22.3 z m 15.6,-64.9 v 19 h 6.4 c 6.7,0 14.8,-1.4 14.8,-9.5 0,-8.9 -7.8,-9.8 -15,-9.8 z m 0,30.4 v 22.3 h 7.2 c 7.2,0 16.2,-1.7 16.2,-10.9 0,-10 -8.4,-11.7 -16.2,-11.7 z"
+                      id="path8"
+                      inkscape:connector-curvature="0"
+                      style="fill:#cccccc" />
+                <path class="st0"
+                      d="M 394.6,363.7 425,286.5 h 17.6 L 473,363.7 H 455.7 L 449,345.9 h -31.5 l -6.7,17.8 z m 49.9,-29.8 -11.1,-32 -11.4,32 z"
+                      id="path10"
+                      inkscape:connector-curvature="0"
+                      style="fill:#cccccc" />
+                <polygon class="st0"
+                         points="529.5,344.2 529.5,286.6 544.3,286.6 544.3,363.7 525.3,363.7 495.2,306.1 495.2,363.7 480.5,363.7 480.5,286.6 499.7,286.6 "
+                         id="polygon12"
+                         style="fill:#cccccc" />
+                <polygon class="st0"
+                         points="577.4,286.6 577.4,319.7 605.3,286.6 624.3,286.6 592.5,323.1 625.7,363.7 605.3,363.7 577.4,327.8 577.4,363.7 561.6,363.7 561.6,286.6 "
+                         id="polygon14"
+                         style="fill:#cccccc" />
+                <rect style="fill:#ffffff"
+                      id="rect16"
+                      height="78.900002"
+                      width="117.6"
+                      class="st1"
+                      y="285.70001"
+                      x="25.700001" />
+                <path class="st2"
+                      d="M 143.3,364.6 V 350.7 H 98.4 c -1.1,6.4 -2.2,11.7 -2.8,13.9 z"
+                      id="path18"
+                      inkscape:connector-curvature="0"
+                      style="fill:#cccccc" />
+                <polygon class="st2"
+                         points="25.7,364.6 72.7,364.6 69.7,350.9 25.7,350.9 "
+                         id="polygon20"
+                         style="fill:#cccccc" />
+                <path class="st0"
+                      d="m 48.8,318 -3.3,-14.2 h 29.3 l 9.8,42.1 6.1,-27.3 c 3.1,-12 4.2,-14.8 21.2,-14.8 3.6,0 12.3,0 12.3,0 0,0 -2.5,11.1 -5.6,23.1 -1.1,4.5 -11.4,3.9 -10.9,-0.3 0,-0.6 0.6,-3.6 0.8,-5.9 0.6,-3.3 -3.3,-3.6 -3.9,-0.6 -0.6,2.2 -2.8,13.9 -4.7,24.8 h 43.8 v -59.4 h -118 v 59.4 h 42.6 l -6.1,-26.8 z"
+                      id="path22"
+                      inkscape:connector-curvature="0"
+                      style="fill:#cccccc" />
+            </g>
+
+        </symbol>
+
+
+        <symbol id="client2" viewBox="0 0 158.75 31.750003" height="200">
+            <g inkscape:label="Layer 1"
+               inkscape:groupmode="layer"
+               id="layer1"
+               transform="translate(-45.733054,-177.84872)">
+                <path inkscape:connector-curvature="0"
+                      id="path1838"
+                      d="m 108.36854,185.93135 -3.90007,2.91007 c -1.88951,-1.54879 -4.23318,-1.87546 -5.595804,-1.87546 -1.30206,0 -2.66467,0.39321 -2.92506,1.29463 -0.19381,0.96798 0.64799,1.68189 2.14382,2.06912 1.68961,0.45373 3.252104,0.84091 5.595794,1.48824 3.51251,1.03455 5.91675,2.5228 5.91675,6.08019 0,4.78551 -4.29375,7.3083 -10.083314,7.3083 -5.78354,0 -9.75629,-2.97653 -10.9251,-4.39827 l 4.16049,-3.03708 c 2.8645,2.5168 4.94781,2.84349 6.57081,2.84349 1.950064,0 3.772934,-0.38711 4.033354,-1.48829 0.19381,-0.9075 -0.58743,-1.55482 -2.21048,-1.94206 -1.889504,-0.45372 -3.445874,-0.77438 -5.202124,-1.2281 -4.74793,-1.29469 -6.11662,-4.00506 -6.11662,-6.52789 0,-3.36377 3.18549,-6.92111 9.04168,-6.92111 5.983374,0 9.495874,3.42422 9.495874,3.42422 m 24.97514,-3.03704 h -17.49591 v 21.6648 h 17.82297 v -4.9791 h -11.64579 v -3.4908 h 8.00004 v -4.78551 h -8.00004 v -3.49687 h 11.31873 z m -20.61477,-5.04559 h -1.36869 v 31.75 h 1.36869 z m 24.5815,0 h -1.36868 v 31.75 h 1.36868 z m 3.11886,26.71039 h 14.05 c 3.77292,0 6.83123,-2.20215 6.83123,-5.82001 0,-2.84348 -1.88949,-4.65845 -4.48751,-5.49941 0,0 -0.0668,0 -0.26061,-0.0607 h 0.26061 c 1.49583,-0.58684 3.11888,-2.13561 3.11888,-4.78549 0,-3.36372 -2.99174,-5.49936 -6.63137,-5.49936 h -12.88123 z m 6.18319,-17.13943 h 4.94175 c 1.10223,0 2.01668,0.84091 2.01668,1.87548 0,1.03455 -0.91445,1.87546 -2.01668,1.87546 h -4.94175 z m 5.98341,12.35398 h -5.98341 v -3.94459 h 5.98341 c 1.10219,0 1.95002,0.84093 1.95002,1.94202 0,1.16161 -0.84783,2.00257 -1.95002,2.00257"
+                      style="fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.54956567" />
+            </g>
+
+        </symbol>
+
+
+
+
 
 
         <symbol id="close" viewBox="0 0 30 30">
@@ -157,6 +245,9 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About us</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#clients">Clients</a></li>
                     <li><a href="#careers">Careers</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <!--<li>
@@ -189,6 +280,20 @@
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
                     </svg>
                 </a>
+                <br />
+                <br />
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
             </div>
             <div class="right">
                 <span class="button actionButton sidebarTrigger" data-sidebar-id="1">
@@ -219,6 +324,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About us</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#clients">Clients</a></li>
                 <li><a href="#careers">Careers</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -252,7 +360,7 @@
         </div>
     </nav>
 
-    <!-- First Intro section for Blacksun-->
+    <!-- First Intro section for Valana-->
     <section class="slide webgl" data-name="home" data-title="Home" id="Home">
         <div class="content">
             <div class="container">
@@ -506,8 +614,11 @@
                                     Next Generation<br>
                                     Consulting
                                 </h1>
-                                <p class="large ae-2 fromLeft"><span class="opacity-8">Valana is full service fintech consulting firm specializing in trading systems. We can deliver complete solutions from planning to technical implementation as well as traditional consulting services. We also offer in house built solutions that can be adapted to your system environment.</span></p>
-                                <p class="large ae-2 fromLeft"><span class="opacity-8">Our main areas of expertise are system customzations, custom application development, quantitave modelling, test automation and project management.</span></p>
+                                <!--<p class="large ae-2 fromLeft"><span class="opacity-8">Valana is full service fintech consulting firm specializing in trading systems. We can deliver complete solutions from planning to technical implementation as well as traditional consulting services. We also offer in house built solutions that can be adapted to your system environment.</span></p>
+                                <p class="large ae-2 fromLeft"><span class="opacity-8">Our main areas of expertise are system customzations, custom application development, quantitave modelling, test automation and project management.</span></p>-->
+                                <p class="large ae-2 fromLeft"><span class="opacity-8">Enriched with know-how from different markets and players over the years, we offer the best practice fintech advisory services starting from system architecture and solution design through its technical implementation all the way to integration and testing of the entire system. Our offer also includes in-house developed, ready-to-use solutions which are adoptable to your specific needs.</span></p>
+                                <p class="large ae-2 fromLeft"><span class="opacity-8">Focusing on sustainability, scalability as well as flexibility of the system as a whole we engage collaborating with you to unlock the full potential of your business model, whether on the buy or sell side of the financial market. </span></p>
+                                <p class="large ae-2 fromLeft"><span class="opacity-8">Trust-worthy relationships with our customers, true commitment and unique approach is our way to make a difference. </span></p>
                                 <a href="#services" class="button small grey crop ae-3 fromCenter">See Our Services</a>
                             </li>
                             <li class="col-1-12"></li>
@@ -539,35 +650,46 @@
                     </div>
             </div>
     </div>-->
-    <section class="slide " data-name="services" data-title="Our Services">
+    <!-- Services -->
+    <section class="slide fromLeft whiteSlide" data-name="services" data-title="Our Services">
         <div class="content">
             <div class="container">
                 <div class="wrap">
                     <div class="fix-12-12">
                         <ul class="flex reverse">
+                            <li class="col-6-12 left cell-32">
 
-                            <li class="fromLeft col-6-12 left cell-32">
-
-                                <h2 class="smaller margin-bottom-2 ae-2">Services</h2>
+                                <h2 class="smaller margin-bottom-2 ae-2">Make the change</h2>
                                 <!--<p class="ae-3 large light margin-bottom-3"><span class="opacity-8">We work mostly with the Front Arena platform using technologies such as Python, ADFL, Robot, C++ and C# but we can work with any platform or technolgy to provide the best solution for you.</span></p>-->
-                                <!--<p class="ae-3 large light margin-bottom-3"><span class="opacity-8">Whether at the bare beginning of developing an idea of introducing a change or in possession of detailly listed requirements, we provide support in decision making process and the best way for its implementation. Our unique blend of analytical, quantitative and technical background combined with track-record of successful projects assures we see the bigger picture and can deliver</span></p>-->
-
-
-                                <p class="ae-3 large light margin-bottom-3"><span class="opacity-8">Whether you have an idea or a set of detailed requirements, we can support you all the way form the decision making process to the technical implementation. Our unique blend of analytical, quantitative and technical background combined with a track-record of successful projects assure we see the bigger picture and can deliver the right service or solution for you.</span></p>
+                                <p class="ae-3 large light margin-bottom-3"><span class="opacity-8">Whether at the bare beginning of developing an idea of introducing a change or in possession of detailly listed requirements, we provide support in decision making process and the best way for its implementation. Our unique blend of analytical, quantitative and technical background combined with track-record of successful projects assures we see the bigger picture and can deliver</span></p>
+                                <!--<ul class="items-32">
+                                    <li class="fix-5-12 toLeft ae-4 margin-bottom-3">
+                                        <h5 class="small margin-bottom-3">We can provide target based reports of the following</h5>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Ports and Services Vulnerability Scan</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> OS Vulnerability Scan</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Virus Check</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Vulnerability Assessment</p>
+                                    </li>
+                                    <li class="fix-5-12 toLeft ae-5 margin-bottom-3">
+                                        <h5 class="small margin-bottom-3">Reports can be made for resellers as well</h5>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> White labeled</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Automated to be sent to customer</p>
+                                    </li>
+                                </ul>-->
                                 <ul class="items-32">
                                     <li class="fix-5-12 toLeft ae-4 margin-bottom-3">
                                         <h5 class="small margin-bottom-3">We can help you with</h5>
                                         <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Requirements analysis & conceptual planning</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Solution design & architecture</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Project planning & management</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Project planning</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Project management</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Design & architecture of the solution</p>
                                         <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Technical implementation</p>
                                         <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> System configuration</p>
                                         <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> System integration & testing</p>
                                     </li>
                                 </ul>
-                                <a href="#contact" class="button small grey crop ae-3 fromCenter">Contact us</a>
                             </li>
-                            <li class="col-6-12 left ae-1"> <img class="ipad-31 ae-4 margin-bottom-tablet-4" src="assets/img/surface_gradient_Plain.svg" width="750" alt="Report Images" data-action="zoom" /> </li>
+                            <li class="col-6-12 left ae-1"> <img class="ipad-31 margin-bottom-tablet-1" src="assets/img/laptop.png" width="1080" alt="Report Images" data-action="zoom" /> </li>
                         </ul>
                     </div>
                 </div>
@@ -575,8 +697,8 @@
         </div>
     </section>
 
-    <!-- Platform -->
-    <!--<section data-name="platform" data-title="platform" class="slide whiteSlide video">
+    <!-- Solutions -->
+    <section data-name="solutions" data-title="solutions" class="slide whiteSlide video">
         <div class="content">
             <div class="container">
                 <div class="wrap">
@@ -584,7 +706,7 @@
                         <ul class="flex left verticalCenter">
                             <li class="col-7-12 fromBottomLeft">
                                 <div class="fix-5-12 toLeft">
-                                    <h1 class="smaller margin-bottom-2 ae-2">Platform</h1>
+                                    <h1 class="smaller margin-bottom-2 ae-2">Solutions</h1>
                                     <div class="ae-3">
                                         <p class="large opacity-8">With our platform Blacksuns Attack Surface Management (ASM) automatically queries over 100 public data sources gathering actionable intelligence on IP addresses, domain names, e-mail addresses, names and more.</p>
                                     </div>
@@ -601,16 +723,15 @@
                 <source src="https://thenewcode.com/assets/videos/report-demo.webm" type="video/webm" />
             </video>
         </div>
-    </section>-->
+    </section>
 
-    <!-- Pricings -->
-
-    <!--<section data-name="pricings" data-title="pricings" class="slide whiteSlide">
+    <!-- Projects -->
+    <section data-name="projects" data-title="projects" class="slide whiteSlide">
         <div class="content">
             <div class="container">
                 <div class="wrap">
                     <div class="fix-12-12">
-                        <h1 class="smaller margin-bottom-2 ae-1">Pricing</h1>
+                        <h1 class="smaller margin-bottom-2 ae-1">Recent Projects</h1>
                         <ul class="flex flex-85 fixedSpaces equal ae-2 fromCenter" data-equal-collapse-width="767">
                             <li class="col-4-12 col-tablet-1-2 col-phablet-1-1 margin-bottom-2 ae-3">
                                 <div class="pad">
@@ -665,7 +786,50 @@
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
+
+    <!-- Clients -->
+    <section data-name="clients" data-title="clients" class="slide whiteSlide">
+        <div class="content">
+            <div class="container">
+                <div class="wrap">
+                    <div class="fix-12-12">
+                        <h1 class="smaller margin-bottom-2 ae-1">Selected Clients</h1>
+                        <ul class="flex flex-85 fixedSpaces equal ae-2 fromCenter" data-equal-collapse-width="767">
+                            <li class="col-4-12 col-tablet-1-2 col-phablet-1-1 margin-bottom-2 ae-3">
+                                <svg style="width:300px;">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#client1"></use>
+                                </svg>
+                               
+                            </li>
+                            <li class="col-4-12 col-tablet-1-2 col-phablet-1-1 margin-bottom-2 ae-4 ">
+                                <svg style="width:300px;">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#client2"></use>
+                                </svg>
+                            </li>
+                            <li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-4">
+                                <div class="pad">
+                                    <h4 class="smaller margin-bottom-1">Pro Package</h4>
+                                    <h2 class="large ae-5">Quote</h2>
+                                    <div class="ae-6">
+                                        <p class="smallest uppercase bolder opacity-4">Per Month</p>
+                                    </div>
+                                    <div class="margin-top-3 margin-bottom-3 equalElement ae-7">
+                                        <ul class="p small">
+                                            <li><strong>White Labeling</strong></li>
+                                            <li><strong>API Access</strong></li>
+                                            <li><strong>Unlimted Devices</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Careers -->
     <section class="slide whiteSlide" data-name="careers" data-title="Careers">
         <div class="content">
