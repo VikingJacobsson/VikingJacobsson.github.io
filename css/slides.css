@@ -13463,6 +13463,10 @@ a.box-99:focus {
     -webkit-text-fill-color: transparent;
 }
 
+.colorButton {
+    background: -webkit-linear-gradient(0deg, #55ff99, #5599ff);
+}
+
 #Home {
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
      background: linear-gradient(-45deg,#81ffff, #75ff8b, #1e90ff);
