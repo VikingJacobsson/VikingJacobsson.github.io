@@ -523,7 +523,7 @@
                                     Consulting
                                 </h1>
                                 <!--<p class="large ae-2 fromLeft"><span class="opacity-8">Valana is full service fintech consulting firm specializing in trading systems. We can deliver complete solutions from planning to technical implementation as well as traditional consulting services. We also offer in house built solutions that can be adapted to your system environment.</span></p>
-        <p class="large ae-2 fromLeft"><span class="opacity-8">Our main areas of expertise are system customzations, custom application development, quantitave modelling, test automation and project management.</span></p>-->
+    <p class="large ae-2 fromLeft"><span class="opacity-8">Our main areas of expertise are system customzations, custom application development, quantitave modelling, test automation and project management.</span></p>-->
                                 <!--<p class="large ae-2 fromLeft"><span class="opacity-8">Enriched with know-how from different markets and players over the years, we offer the best practice fintech advisory services starting from system architecture and solution design through its technical implementation all the way to integration and testing of the entire system. Our offer also includes in-house developed, ready-to-use solutions which are adoptable to your specific needs.</span></p>-->
                                 <p class="large ae-2 fromLeft"><span class="opacity-8">At Valana we love the challenge of finding intuitive and easy-to-use solutions to complex problems. The ever-increasing competition in the capital markets space drive us to think bigger and deliver solutions which measure up to the challenges of tomorrow today.</span></p>
                                 <p class="large ae-2 fromLeft"><span class="opacity-8">Focusing on sustainability, scalability as well as flexibility we engage with you to unlock the full potential of your business model, whether on the buy or sell side of the financial market. </span></p>
@@ -531,12 +531,8 @@
                                 <a href="#services" class="button small grey crop ae-3 fromCenter colorButton">See Our Services</a>
                             </li>
                             <li class="col-1-12"></li>
-                            <li id ="canvasGlobe" class="col-6-12 ae-4 margin-bottom-tablet-4 ">
-
-                            </li>
-                                <!--<li class="col-6-12"> <img class="ae-4 margin-bottom-tablet-4" width="580" styles="margin:-28% 0" src="assets/img/about-us.png" alt="iPhones Thumbnail" data-action="zoom" /> </li>-->
+                            <li class="col-6-12"> <img class="ae-4 margin-bottom-tablet-4" width="580" styles="margin:-28% 0" src="assets/img/about-us.png" alt="iPhones Thumbnail" data-action="zoom" /> </li>
                         </ul>
-                        <!--<div id="canvasGlobe"></div>-->
                     </div>
                 </div>
             </div>
@@ -768,126 +764,3 @@
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 </body>
 </html>
-
-<script>
-
-    var renderer2, scene2, camera2, composer, circle, skelet, w, h;
-
-    window.onload = function () {
-        initTwo();
-        animateTwo();
-    }
-
-    function initTwo() {
-        renderer2 = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-
-        w = document.getElementById('canvasGlobe').offsetWidth;
-        h = w;
-        //h = document.getElementById('canvasGlobe').offsetHeight;
-        //w = window.innerWidth*0.7;
-        //h = window.innerHeight*0.7;
-        //w =800;
-        //h = 800;
-        renderer2.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
-        renderer2.setSize(w, h);
-        //renderer2.setSize(800, 800);
-        renderer2.autoClear = false;
-        renderer2.setClearColor(0x000000, 0.0);
-        document.getElementById('canvasGlobe').appendChild(renderer2.domElement);
-
-        scene2 = new THREE.Scene();
-
-        camera2 = new THREE.PerspectiveCamera(75, w / h, 1, 1000);
-        camera2.position.z = 400;
-        scene2.add(camera2);
-
-        circle = new THREE.Object3D();
-        skelet = new THREE.Object3D();
-
-
-        scene2.add(circle);
-        scene2.add(skelet);
-
-
-        var geometry = new THREE.TetrahedronGeometry(2, 0);
-        var geom = new THREE.IcosahedronGeometry(7, 1);
-        var geom2 = new THREE.IcosahedronGeometry(15, 1);
-
-        var material = new THREE.MeshPhongMaterial({
-            color: 0xffffff,
-            flatShading: THREE.FlatShading
-        });
-
-        //for (var i = 0; i < 1000; i++) {
-        //    var mesh = new THREE.Mesh(geometry, material);
-        //    mesh.position.set(Math.random() - 0.5, Math.random() - 0.5, Math.random() - 0.5).normalize();
-        //    mesh.position.multiplyScalar(90 + (Math.random() * 700));
-        //    mesh.rotation.set(Math.random() * 2, Math.random() * 2, Math.random() * 2);
-        //    particle.add(mesh);
-        //}
-
-        var mat = new THREE.MeshPhongMaterial({
-            color: 0x5599ff,
-            flatShading: THREE.FlatShading
-        });
-
-        var mat2 = new THREE.MeshPhongMaterial({
-            color: 0x55ff99,
-            wireframe: true,
-            side: THREE.DoubleSide
-
-        });
-
-        var planet = new THREE.Mesh(geom, mat);
-        planet.scale.x = planet.scale.y = planet.scale.z = 24;
-        circle.add(planet);
-
-        var planet2 = new THREE.Mesh(geom2, mat2);
-        planet2.scale.x = planet2.scale.y = planet2.scale.z = 15;
-        skelet.add(planet2);
-
-        var ambientLight = new THREE.AmbientLight(0x999999);
-        scene2.add(ambientLight);
-
-
-        var lights = [];
-        lights[0] = new THREE.DirectionalLight(0xffffff, 1);
-        lights[0].position.set(1, 0, 0);
-        lights[1] = new THREE.DirectionalLight(0x55ff99, 1);
-        lights[1].position.set(0.75, 1, 0.5);
-        lights[2] = new THREE.DirectionalLight(0x5599ff, 1);
-        lights[2].position.set(-0.75, -1, 0.5);
-        scene2.add(lights[0]);
-        scene2.add(lights[1]);
-        scene2.add(lights[2]);
-
-
-        window.addEventListener('resize', onWindowResize, false);
-
-    };
-
-    function onWindowResize() {
-        camera2.aspect = 1;
-        //camera2.aspect = window.innerWidth*0.6 / window.innerHeight*0.6;
-        //camera2.updateProjectionMatrix();
-        //renderer2.setSize(window.innerWidth * 0.7, window.innerHeight * 0.7);
-        w = document.getElementById('canvasGlobe').offsetWidth;
-        h = w;
-        //h = document.getElementById('canvasGlobe').offsetHeight;
-        renderer2.setSize(w,h);
-    }
-
-    function animateTwo() {
-        requestAnimationFrame(animateTwo);
-
-        //particle.rotation.x += 0.0000;
-        //particle.rotation.y -= 0.0040;
-        circle.rotation.x -= 0.0020;
-        circle.rotation.y -= 0.0030;
-        skelet.rotation.x -= 0.0010;
-        skelet.rotation.y += 0.0020;
-        renderer2.clear();
-
-        renderer2.render(scene2, camera2)
-    };
-</script>
