@@ -772,7 +772,7 @@
     }
 
     function initTwo() {
-        renderer2 = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        
 
         w = document.getElementById('canvasGlobe').offsetWidth;
         h = w;
@@ -781,6 +781,7 @@
         //h = window.innerHeight*0.7;
         //w =800;
         //h = 800;
+        renderer2 = new THREE.WebGLRenderer({ antialias: true, alpha: true });
         renderer2.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
         renderer2.setSize(w, h);
         //renderer2.setSize(800, 800);
@@ -895,6 +896,8 @@
     ((d) => {
         const c = d.querySelector("#c");
         const ctx = c.getContext("2d");
+        ctx.imageSmoothingEnabled = false
+        //ctx.translate(0.5, 0.5);
 
         c.width = innerWidth;
         c.height = innerHeight;
@@ -946,6 +949,14 @@
         let particles;
 
         const init = (e) => {
+            //h = 800;
+            //renderer3 = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+           //renderer3.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
+            //renderer2.setSize(800, 800);
+            //renderer3.autoClear = false;
+            //renderer3.setClearColor(0x000000, 0.0);
+
+
             c.width = innerWidth;
             c.height = innerHeight;
 
@@ -976,6 +987,7 @@
         const animation = () => {
             //stats.begin();
 
+            //renderer3.clear();
             ctx.clearRect(0, 0, c.width, c.height);
             //ctx.font = "12px Verdana";
             //ctx.fillText("Left click for create ", 10, 15);
@@ -986,6 +998,9 @@
             });
 
             requestAnimationFrame(animation);
+           
+
+            //renderer3.render(scene2, camera2)
             //stats.end();
         };
 
@@ -1045,6 +1060,7 @@
         window.addEventListener("resize", init);
         c.addEventListener("click", (e) => clicked(e));
         c.addEventListener("contextmenu", (e) => deleteParticle(e));
+
     })(document);
 
 </script>
