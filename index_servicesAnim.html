@@ -34,6 +34,7 @@
     <!-- Uncompressed Scripts -->
     <script src="js/slides.js?505341" type="text/javascript"></script>
     <script src="js/plugins.js?505341" type="text/javascript"></script>
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -566,9 +567,9 @@
             <div class="container">
                 <div class="wrap">
                     <div class="fix-12-12">
-                        <ul class="flex reverse">
-
-                            <li class="fromLeft col-6-12 left cell-32">
+                       
+                        <ul class="flex fixedSpaces reverse">
+                            <li class="col-6-12 left">
 
                                 <h2 class="smaller margin-bottom-2 ae-2">Services</h2>
                                 <!--<p class="ae-3 large light margin-bottom-3"><span class="opacity-8">We work mostly with the Front Arena platform using technologies such as Python, ADFL, Robot, C++ and C# but we can work with any platform or technolgy to provide the best solution for you.</span></p>-->
@@ -589,12 +590,15 @@
                                 </ul>
                                 <a href="#contact" class="button small grey crop ae-3 fromCenter colorButton">Contact us</a>
                             </li>
-                            <li class="col-6-12 left ae-1"> <img class="ipad-31 ae-4 margin-bottom-tablet-4" src="assets/img/surface_gradient_Plain.svg" width="750" alt="Report Images" data-action="zoom" /> </li>
+                            <!--<li class="col-6-12 left ae-1"> <img class="ipad-31 ae-4 margin-bottom-tablet-4" src="assets/img/surface_gradient_Plain.svg" width="750" alt="Report Images" data-action="zoom" /> </li>-->
+                            <li id="canvasWaveCont" class="col-6-12 ae-4 margin-bottom-tablet-4"> <canvas id="canvasWave" widht="100%"></canvas></li>
+
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Platform -->
@@ -722,22 +726,122 @@
         <div class="content">
             <div class="container">
                 <div class="wrap">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="fix-12-12">
+                        <!--<div class="fix-5-12">-->
+                        <h1 class="larger ae-3" style="color:black">Let's Connect</h1>
+                        <br />
+                        <a href="mailto:hello@valana.com">
+                            <img src="assets/img/Message_Plane.svg" height="100" />
+                            <!--<svg width="150" height="30">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+                            </svg>-->
+                        </a>
 
-                    <div class="fix-10-12">
-                        <a class="margin-bottom-6 ae-1 opacity-5 ae-3" style="font-size:x-large">Let's connect</a>
-                        <div class="fix-10-12 ae-3">
-                            <a href="mailto:hello@valana.com" class=" opacity-8 ae-3 colorHeader h1 bold">hello@valana.com</a>
-                            <!--<a href="mailto:hello@valana.com" class=" opacity-8 ae-3 colorHeader h1 bold">
-
-                                <img width="60%"src="assets/img/ValanaInboxColorful.svg" />
-                            </a>-->
-
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="background"><canvas id="c"></canvas></div>
+        <div class="background"></div>
     </section>
     <!--<nav class="panel bottom">
         <div class="sections">
@@ -750,7 +854,7 @@
             </div>
         </div>
     </nav>-->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
 </body>
 </html>
 
@@ -877,182 +981,41 @@
         renderer2.render(scene2, camera2)
     };
 </script>
+<script id="vs" type="x-shader/x-vertex">
+    attribute vec2 position;
+
+    uniform float u_time;
+    uniform mat4 u_modelViewPerspective;
+
+    varying vec3 vColor;
+
+    vec3 minColor = vec3(0.33, 1.0, 0.6);
+    vec3 maxColor = vec3(0.33, 0.6, 1.0);
+
+    void main(void)
+    {
+    float s_contrib = sin(position.x*2.0*3.14159 + u_time);
+    float t_contrib = cos(position.y*2.0*3.14159 + u_time);
+    float height = s_contrib*t_contrib;
+    gl_Position = u_modelViewPerspective * vec4(vec3(position, height), 1.0);
+
+    vColor = mix(minColor, maxColor, height/2.0 + 0.5);
+    }
+</script>
+
+<script id="fs" type="x-shader/x-fragment">
+    precision mediump float;
+    varying vec3 vColor;
+
+    void main(void)
+    {
+    gl_FragColor = vec4(vColor, 1.0);
+    }
+</script>
+<script src="gl-matrix.js" type="text/javascript"></script>
+<script src="webGLUtility.js" type="text/javascript"></script>
+<script src="vert_wave.js" type="text/javascript"></script>
 
 
-<!--<script>
-    //const stats = new Stats();
-    //stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
-    //stats.dom.id = "stats"
-    //document.body.append(stats.dom);
-
-    ((d) => {
-        const c = d.querySelector("#c");
-        const ctx = c.getContext("2d");
-        ctx.imageSmoothingEnabled = false
-        //ctx.translate(0.5, 0.5);
-
-        c.width = innerWidth;
-        c.height = innerHeight;
-
-        class Particles {
-            constructor({ x, y, color, radius, d }) {
-                this.x = x;
-                this.y = y;
-                this.color = color;
-                this.radius = radius;
-                this.d = d;
-                this.lineWidth = 1;
-                this.range = 200;
-            }
-
-            update(particles) {
-                const length = particles.length;
-                this.d = border(this.x, this.y, this.d, this.radius);
-
-                this.x += this.d.x;
-                this.y += this.d.y;
-
-                for (let i = 0; i < length; i++) {
-                    if (this === particles[i]) continue;
-                    const dist = distance(this, particles[i]);
-                    if (dist < this.range) {
-                        ctx.lineWidth = this.lineWidth;
-                        ctx.strokeStyle = `rgba(85,255,153,${2 - dist / this.range})`;
-                        ctx.beginPath();
-                        ctx.moveTo(this.x, this.y);
-                        ctx.lineTo(particles[i].x, particles[i].y);
-                        ctx.stroke();
-                        ctx.closePath();
-                    }
-                }
-
-                this.draw();
-            }
-
-            draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fillStyle = this.color;
-                ctx.fill();
-                ctx.closePath();
-            }
-        }
-
-        let particles;
-
-        const init = (e) => {
-            //h = 800;
-            //renderer3 = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-            //renderer3.setPixelRatio((window.devicePixelRatio) ? window.devicePixelRatio : 1);
-            //renderer2.setSize(800, 800);
-            //renderer3.autoClear = false;
-            //renderer3.setClearColor(0x000000, 0.0);
 
 
-            c.width = innerWidth;
-            c.height = innerHeight;
-
-            const particlesLenght = 20;
-            particles = [];
-
-            for (let i = 0; i < particlesLenght; i++) {
-                particles.push(new Particles(setup()));
-            }
-        };
-
-        const distance = (p1, p2) => {
-            return Math.hypot(p1.x - p2.x, p1.y - p2.y);
-        };
-
-        const border = (x, y, d, radius) => {
-            if (x + radius >= c.width || x - radius <= 0) {
-                d.x = -d.x;
-            }
-
-            if (y + radius >= c.height || y - radius <= 0) {
-                d.y = -d.y;
-            }
-
-            return { x: d.x, y: d.y };
-        };
-
-        const animation = () => {
-            //stats.begin();
-
-            //renderer3.clear();
-            ctx.clearRect(0, 0, c.width, c.height);
-            //ctx.font = "12px Verdana";
-            //ctx.fillText("Left click for create ", 10, 15);
-            //ctx.fillText("Right click for delete ", 10, 15 * 2 + 4);
-
-            particles.forEach((particle) => {
-                particle.update(particles);
-            });
-
-            requestAnimationFrame(animation);
-
-
-            //renderer3.render(scene2, camera2)
-            //stats.end();
-        };
-
-        const clicked = (e) => {
-            particles.push(new Particles(setup(e)));
-
-            console.log(particles.length)
-        };
-
-        const setup = (e = false) => {
-            const degrees = 360;
-            const radius = 5;
-            const { x, y } = mouseOnCanvas(e, radius, c);
-            const speed = 1 + Math.random() * 2;
-            const directionAngle = Math.floor(Math.random() * degrees);
-            const color = "rgba(85,153,255,1)";
-
-            const d = {
-                x: Math.cos(directionAngle) * speed,
-                y: Math.sin(directionAngle) * speed
-            };
-            return { x, y, color, radius, d };
-        };
-
-        const mouseOnCanvas = (e, radius, c) => {
-            const bounding = c.getBoundingClientRect();
-            const mx =
-                e.clientX - bounding.left || minMax(0 + radius, c.width - radius);
-            const my =
-                e.clientY - bounding.top || minMax(0 + radius, c.height - radius);
-
-            const xInCanvas =
-                mx <= radius
-                    ? mx + radius + 0.5
-                    : mx + radius >= c.width
-                        ? mx - radius - 0.5
-                        : mx;
-            const yInCanvas =
-                my <= radius
-                    ? my + radius + 0.5
-                    : my + radius >= c.height
-                        ? my - radius - 0.5
-                        : my;
-
-            return { x: xInCanvas, y: yInCanvas };
-        };
-
-        const minMax = (min, max) => Math.random() * (max - min) + min;
-
-        const deleteParticle = (e) => {
-            e.preventDefault();
-            if (particles.length) particles.pop();
-        };
-
-        init();
-        requestAnimationFrame(animation);
-        window.addEventListener("resize", init);
-        c.addEventListener("click", (e) => clicked(e));
-        c.addEventListener("contextmenu", (e) => deleteParticle(e));
-
-    })(document);
-
-</script>-->
