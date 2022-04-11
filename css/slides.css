@@ -13515,3 +13515,20 @@ video {
 
 
 }
+
+
+img.rounded {
+    margin: auto;    
+    display: block;
+}
+
+
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+    margin: auto;    
+    display: block;
+}
