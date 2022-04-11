@@ -13499,11 +13499,19 @@ a.box-99:focus {
         display: none !important;
     }
 }
-
+/*
 video {
     left: 50%;
     margin: 0 auto;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+}*/
+
+
+
+video {
+    margin: 10% auto;
+
+
 }
