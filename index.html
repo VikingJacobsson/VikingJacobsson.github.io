@@ -153,7 +153,7 @@
                     <li><a href="#about">About us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#solutions">Solutions</a></li>
-                    <li><a href="#whoWeAre">Who We Are</a></li>
+                    <li><a href="#management">Management</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <!--<li>
                         <a href="https://www.linkedin.com/company/blacksunpentest" target="_blank" class="shift-up-2">
@@ -217,7 +217,7 @@
                 <li class="ae-3"><a href="#about">About us</a></li>
                 <li class="ae-4"><a href="#services">Services</a></li>
                 <li class="ae-5"><a href="#solutions">Solutions</a></li>
-                <li class="ae-6"><a href="#whoWeAre">Who We Are</a></li>
+                <li class="ae-6"><a href="#management">Management</a></li>
                 <li class="ae-7"><a href="#contact">Contact</a></li>
 
             </ul>
@@ -273,27 +273,39 @@
 
     <!-- First Intro section for Valana-->
     <section class="slide webgl" data-name="home" data-title="Home" id="Home">
+
         <div class="content">
+
+
             <div class="container">
+
                 <div class="wrap">
+
                     <div class="fix-12-12">
+
                         <!--<div class="fix-5-12">-->
-                        <h1 class="larger ae-3" style="color:black">We make the Future Present</h1>
+                        <h1 class="larger ae-2 fromCenter" style="color:white">We make the Future Present</h1>
                         <!--<svg height="77" class="wide ae-1 fromCenter">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-                        </svg>-->
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+    </svg>-->
                         <!--</div>-->
                         <!--<p class="ae-3"><span class="opacity-9">We make the Future Present</span></p>-->
-                        <a href="#about" class="button small grey margin-top-1 ae-4 fromCenter">Learn More</a>
+                        <a href="#about" class="button small grey margin-top-1 ae-4 fromCenter">About Us</a>
+                        <a href="#services" class="button small grey margin-top-1 ae-4 fromCenter">Services</a>
+                        <a href="#solutions" class="button small grey margin-top-1 ae-4 fromCenter">Solutions</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="background"></div>
+        <div class="video background">
+            <video autoplay muted loop id="ValanaLoop">
+                <source src="assets/videos/ValanaLoop.mp4" type="video/mp4">
+            </video>
+        </div>
     </section>
     <script type="text/javascript" src="https://rawcdn.githack.com/mrdoob/three.js/41284c6812176d16a6e426f1962ee1738885fa58/build/three.min.js"></script>
     <script type="text/javascript" src="https://rawcdn.githack.com/mrdoob/three.js/41284c6812176d16a6e426f1962ee1738885fa58/examples/js/WebGL.js"></script>
-    <script type="x-shader/x-vertex" id="vertexshader">
+    <!--<script type="x-shader/x-vertex" id="vertexshader">
         attribute float scale;
         void main() {
         vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
@@ -510,7 +522,7 @@
 
         }
 
-    </script>
+    </script>-->
 
     <!-- About Valana -->
 
@@ -660,7 +672,7 @@
 
 
                             <li class="col-6-12 left ae-1">
-                                <video controls="" preload="metadata" width="100%">
+                                <video controls="" preload="metadata" width="100%" class="infoVideo">
                                     <source src="assets/videos/VolatilityEdgeONE.mp4#t=0.001" type="video/mp4" />
                                 </video>
                             </li>
@@ -684,12 +696,12 @@
 
 
     <!-- Pricings -->
-    <section data-name="whoWeAre" data-title="whoWeAre" class="slide">
+    <section data-name="management" data-title="management" class="slide">
         <div class="content">
             <div class="container">
                 <div class="wrap">
                     <div class="fix-12-12">
-                        <h1 class="smaller margin-bottom-2 ae-1">Who We Are</h1>
+                        <h1 class="smaller margin-bottom-2 ae-1">Management</h1>
                         <br />
                         <ul class="flex flex-85 fixedSpaces equal ae-2 fromCenter" data-equal-collapse-width="767">
                             <li class="col-6-12 col-tablet-1-2 col-phablet-1-1 margin-bottom-2 ae-3">
@@ -738,7 +750,7 @@
                                     <h4 class="smaller margin-bottom-1">Ana Janjic</h4>
                                     <!--<h2 class="large ae-5">Quote</h2>-->
                                     <div class="ae-6">
-                                        <p class="smallest uppercase bolder opacity-4">Consulting Director</p>
+                                        <p class="smallest uppercase bolder opacity-4">Services Director</p>
                                     </div>
                                     <a href="mailto:ana@valana.com" class=" opacity-8 ae-3 colorHeader">ana@valana.com</a>
                                     <div class="margin-top-3 margin-bottom-3 equalElement ae-7">

@@ -13471,16 +13471,16 @@ a.box-99:focus {
     display:block;
 }
 
-#Home {
+/*#Home {*/
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
-    background: linear-gradient(-45deg,#81ffff, #75ff8b, #1e90ff);
+    /*background: linear-gradient(-45deg,#81ffff, #75ff8b, #1e90ff);*/
     /*background: linear-gradient(-45deg,#55ff99, #5599ff);*/
     /*background: linear-gradient(-45deg,#75ff8b,#81ffff);*/
-    background-size: 400% 400%;
+    /*background-size: 400% 400%;
     animation: gradient 10s ease infinite;
-}
+}*/
 
-@keyframes gradient {
+/*@keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
@@ -13492,7 +13492,7 @@ a.box-99:focus {
     100% {
         background-position: 0% 50%;
     }
-}
+}*/
 
 @media screen and (max-width: 1024px) {
     .hideForMobile {
@@ -13510,7 +13510,7 @@ video {
 
 
 
-video {
+.infoVideo {
     margin: 10% auto;
 
 
