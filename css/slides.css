@@ -13467,6 +13467,10 @@ a.box-99:focus {
     background: -webkit-linear-gradient(0deg, #55ff99, #5599ff);
 }
 
+.transparentButton {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .socialSpecial{
     display:block;
 }
@@ -13520,8 +13524,8 @@ video {
     position: fixed;
     right: 0;
     top:0;
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 300%;
+    max-height: 300%;
     transform: translateX(calc((100% - 100vw) / 2));
 }
 
