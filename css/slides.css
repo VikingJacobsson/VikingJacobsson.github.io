@@ -13519,7 +13519,7 @@ video {
 .landingVideo {
     position: fixed;
     right: 0;
-    top: 0;
+    top:-10%;
     min-width: 100%;
     min-height: 100%;
     transform: translateX(calc((100% - 100vw) / 2));
