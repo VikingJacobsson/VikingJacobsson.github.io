@@ -13519,12 +13519,18 @@ video {
 .landingVideo {
     position: fixed;
     right: 0;
-    top:-10%;
+    top:0;
     min-width: 100%;
     min-height: 100%;
     transform: translateX(calc((100% - 100vw) / 2));
 }
-/*
+
+/*@media screen and (max-aspect-ratio: 1920/1080) {
+    .landingVideo > video {
+        height: 100%;
+    }
+*/
+    /*
 .video-container {
     position: absolute;
     top: 0;
@@ -13559,7 +13565,7 @@ video {
 
 
 
-/*.video_contain {
+    /*.video_contain {
     position: absolute;
     top: -50%;
     left: -50%;
@@ -13567,7 +13573,7 @@ video {
     height: 200%;
 }*/
 
-/*video {
+    /*video {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -13580,18 +13586,18 @@ video {
 
 
 
-img.rounded {
-    margin: auto;    
-    display: block;
-}
+    img.rounded {
+        margin: auto;
+        display: block;
+    }
 
 
-.image-cropper {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-    margin: auto;    
-    display: block;
-}
+    .image-cropper {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+    }
