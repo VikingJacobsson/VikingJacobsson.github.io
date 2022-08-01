@@ -1,0 +1,132 @@
+    <nav class="side circle medium">
+        <div class="navigation default">
+            <ul>
+            </ul>
+        </div>
+    </nav>
+    <nav class="panel top">
+        <div class="sections desktop">
+
+            <div class="left">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#management">Management</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!--<li>
+                        <a href="https://www.linkedin.com/company/blacksunpentest" target="_blank" class="shift-up-2">
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="center">
+                <a href="#" title="Slides Valana">
+                    <svg style="width:150px;height:44px">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <!--<div class="right" > </div>-->
+            <div class="right"><a class="button  small transparentButtonYellow" href="#contact">Contact us</a></div>
+
+        </div>
+        <div class="sections compact desktop hideOnScroll">
+            <div class="left">
+                <div class="right hidden"><a class="button transparentButtonYellow  small" href="#contact">Contact us</a></div>
+            </div>
+            <div class="center">
+                <a href="#" title="Slides Valana">
+                    <svg style="width:150px;height:40px">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="right">
+                <span class="button actionButton sidebarTrigger" data-sidebar-id="1">
+                    <svg>
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu"></use>
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu  -->
+    <nav class="sidebar black animated  visible animate active wideForPhone" style="max-width:100%;" data-sidebar-id="1">
+        <div class="close">
+            <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
+            </svg>
+        </div>
+        <div class="content">
+            <div class="left fromTop ae-1">
+                <a href="#" class="logo">
+                    <img src="assets/img/ValanaVA.svg" height="100" />
+                    <!--<svg width="150" height="30">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+                    </svg>-->
+                </a>
+            </div>
+            <ul class="mainMenu big  semiBold margin-top-3">
+                <li class="ae-2"><a href="#home">Home</a></li>
+                <li class="ae-3"><a href="#about">About us</a></li>
+                <li class="ae-4"><a href="#services">Services</a></li>
+                <li class="ae-5"><a href="#solutions">Solutions</a></li>
+                <li class="ae-6"><a href="#management">Management</a></li>
+                <li class="ae-7"><a href="#contact">Contact</a></li>
+
+            </ul>
+            <ul class="ae-8">
+                <li>
+                    <a href="https://linkedin.com/company/valanatech">
+                        <img src="assets/img/LinkedInIcon.svg" height="40" />
+
+                    </a>
+
+                </li>
+            </ul>
+            <!--<ul class="subMenu opacity-8 ae-3">
+                <li><a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+
+
+            </ul>-->
+            <!--<ul class=" socialSpecial ae-4">
+                <li>
+                    <a href="https://facebook.com/portseif" target="_blank">
+                        <svg height="50">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>-->
+            <!--<ul class="social opacity-8 ae-4">
+                <li>
+                    <a href="https://facebook.com/portseif" target="_blank" title="Visit Facebook">
+                        <svg>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://portseif.io/#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/portseif" target="_blank" title="Visit Twitter">
+                        <svg>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://portseif.io/#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/_portseif" target="_blank" title="Visit Instagram">
+                        <svg>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://portseif.io/#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>-->
+        </div>
+    </nav>

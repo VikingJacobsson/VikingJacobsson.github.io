@@ -13467,9 +13467,31 @@ a.box-99:focus {
     background: -webkit-linear-gradient(0deg, #55ff99, #5599ff);
 }
 
+.dodgerBlueButton {
+    background: dodgerblue;
+}
+
+
+.desktopNavButton.selected{
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 2px;
+}
+
 .transparentButton {
     background: rgba(0, 0, 0, 0.5);
 }
+
+.transparentButtonYellow {
+    background: rgba(255, 204, 0, 1);
+}
+
+.transparentButtonOrange {
+    background: rgba(255, 164, 0, 0.7);
+}
+
+
 
 .socialSpecial{
     display:block;

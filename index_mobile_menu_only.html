@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -49,7 +49,7 @@
     <style>
 
         .slides .panel.top .menu li a {
-            /*padding: 4px 20px 5px;*/
+            padding: 4px 20px 5px;
         }
 
         /* set a style for a selected link */
@@ -58,11 +58,10 @@
         .slides.stage-3 .panel.top .menu li:nth-child(3) a,
         .slides.stage-4 .panel.top .menu li:nth-child(4) a,
         .slides.stage-5 .panel.top .menu li:nth-child(5) a {
-            color:white;
-            /*background: #55ff99;
+            background: #55ff99;
             padding-left: 15px;
             padding-right: 15px;
-            border-radius: 2px;*/
+            border-radius: 2px;
         }
     </style>
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none" id="customSvgLibrary">
@@ -145,41 +144,43 @@
             </ul>
         </div>
     </nav>
-
-
     <nav class="panel top">
-
         <div class="sections desktop">
 
-
             <div class="left">
-                <a href="#" title="Slides Blacksunk">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#management">Management</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!--<li>
+                        <a href="https://www.linkedin.com/company/blacksunpentest" target="_blank" class="shift-up-2">
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="center">
+                <a href="#" title="Slides Valana">
                     <svg style="width:150px;height:44px">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
                     </svg>
                 </a>
             </div>
-            <div class="center">
-                <ul class="menu">
-                    <li><a class="desktopNavButton" href="#home">Home</a></li>
-                    <li><a class="desktopNavButton" href="#about">About us</a></li>
-                    <li><a class="desktopNavButton" href="#services">Services</a></li>
-                    <li><a class="desktopNavButton" href="#solutions">Solutions</a></li>
-                    <!--<li><a class="desktopNavButton" href="#management">Management</a></li>-->
-                    <li>
-                        <a href="https://www.linkedin.com/company/valanatech" target="_blank" class="shift-up-2">
-                            <svg>
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="right"><a class="button transparentButtonOrange small" href="#contact">Let's Connect</a></div>
+            <!--<div class="right" > </div>-->
+            <div class="right hidden"><a class="button yellow small" href="#contact">Contact us</a></div>
+
         </div>
-        <div class="sections compact hidden">
+        <div class="sections compact desktop hideOnScroll">
             <div class="left">
-                <a href="#" title="Slides Blacksun">
+                <div class="right hidden"><a class="button yellow small" href="#contact">Contact us</a></div>
+            </div>
+            <div class="center">
+                <a href="#" title="Slides Valana">
                     <svg style="width:150px;height:40px">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
                     </svg>
@@ -285,8 +286,8 @@
                         <!--<div class="fix-5-12">-->
                         <h1 class="larger ae-2 fromCenter" style="color:white">We make the Future Present</h1>
                         <!--<svg height="77" class="wide ae-1 fromCenter">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-                        </svg>-->
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+    </svg>-->
                         <!--</div>-->
                         <!--<p class="ae-3"><span class="opacity-9">We make the Future Present</span></p>-->
                         <a href="#about" class="button small grey margin-top-1 ae-4 fromCenter transparentButton">About Us</a>
@@ -522,6 +523,7 @@
         }
 
     </script>-->
+
     <!-- About Valana -->
 
     <section data-name="about" data-title="About us" class="slide video">
@@ -536,13 +538,13 @@
                                     Consulting
                                 </h1>
                                 <!--<p class="large ae-2 fromLeft"><span class="opacity-8">Valana is full service fintech consulting firm specializing in trading systems. We can deliver complete solutions from planning to technical implementation as well as traditional consulting services. We also offer in house built solutions that can be adapted to your system environment.</span></p>
-                                <p class="large ae-2 fromLeft"><span class="opacity-8">Our main areas of expertise are system customzations, custom application development, quantitave modelling, test automation and project management.</span></p>-->
+    <p class="large ae-2 fromLeft"><span class="opacity-8">Our main areas of expertise are system customzations, custom application development, quantitave modelling, test automation and project management.</span></p>-->
                                 <!--<p class="large ae-2 fromLeft"><span class="opacity-8">Enriched with know-how from different markets and players over the years, we offer the best practice fintech advisory services starting from system architecture and solution design through its technical implementation all the way to integration and testing of the entire system. Our offer also includes in-house developed, ready-to-use solutions which are adoptable to your specific needs.</span></p>-->
                                 <p class="large ae-2 fromLeft"><span class="opacity-8">At Valana we love the challenge of finding intuitive and easy-to-use solutions to complex problems. The ever-increasing competition in the capital markets space drive us to think bigger and deliver solutions which measure up to the challenges of tomorrow today.</span></p>
                                 <p class="large ae-2 fromLeft"><span class="opacity-8">Focusing on sustainability, scalability as well as flexibility we engage with you to unlock the full potential of your business model, whether on the buy or sell side of the financial market. </span></p>
                                 <!--<p class="large ae-2 fromLeft"><span class="opacity-8">Trust-worthy relationships with our customers, true commitment and unique approach is our way to make a difference. </span></p>-->
-                                <!--<a href="#services" class="button small grey crop ae-3 fromCenter dodgerBlueButton">Our Services</a>
-                                <a href="#solutions" class="button small grey crop ae-3 fromCenter dodgerBlueButton">Our Solutions</a>-->
+                                <a href="#services" class="button small grey crop ae-3 fromCenter colorButton">Our Services</a>
+                                <a href="#solutions" class="button small grey crop ae-3 fromCenter colorButton">Our Solutions</a>
                             </li>
                             <li class="col-1-12"></li>
                             <li id="canvasGlobe" class="col-6-12 ae-4 margin-bottom-tablet-4 ">
@@ -590,27 +592,21 @@
                                 <!--<p class="ae-3 large light margin-bottom-3"><span class="opacity-8">We work mostly with the Front Arena platform using technologies such as Python, ADFL, Robot, C++ and C# but we can work with any platform or technolgy to provide the best solution for you.</span></p>-->
                                 <!--<p class="ae-3 large light margin-bottom-3"><span class="opacity-8">Whether at the bare beginning of developing an idea of introducing a change or in possession of detailly listed requirements, we provide support in decision making process and the best way for its implementation. Our unique blend of analytical, quantitative and technical background combined with track-record of successful projects assures we see the bigger picture and can deliver</span></p>-->
                                 <!--<p class="ae-3 large light margin-bottom-3"><span class="opacity-8">Whether you have an idea or a set of detailed requirements, we can support you all the way form the decision making process to the technical implementation. Our unique blend of analytical, quantitative and technical background combined with a track-record of successful projects assures we see the bigger picture and can deliver the right service or solution for you.</span></p>-->
-                                <p class="ae-3 large light margin-bottom-3"><span class="opacity-8">We offer best practice fintech advisory services starting from system architecture and solution design through its technical implementation all the way to integration and testing of the entire system.</span></p>
-
-                                <ul class="items-32">
-                                    <li class="fix-5-12 toLeft ae-4 margin-bottom-3">
-                                        <h5 class="small margin-bottom-3">Systems we specialize in</h5>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: dodgerblue;">check_circle</i> FIS Front Arena Cross Asset Trading and Risk Platform</p>
-                                    </li>
-                                </ul>
+                                <p class="ae-3 large light margin-bottom-3"><span class="opacity-8">We offer best practice fintech advisory services starting from system architecture and solution design through its technical implementation all the way to integration and testing of the entire system. Our offer also includes in-house developed, ready-to-use solutions adaptable to your specific needs.</span></p>
 
                                 <ul class="items-32">
                                     <li class="fix-5-12 toLeft ae-4 margin-bottom-3">
                                         <h5 class="small margin-bottom-3">We can help you with</h5>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> Requirements analysis & conceptual planning</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> Solution design & architecture</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> Project planning & management</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> Technical implementation</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> System configuration</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> System integration, testing & test automation</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Requirements analysis & conceptual planning</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Solution design & architecture</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Project planning & management</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Technical implementation</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> System configuration</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> System integration & testing</p>
                                     </li>
                                 </ul>
-                                <a href="mailto:hello@valana.com?subject=Services Consultation" class="button small grey crop ae-3 fromCenter dodgerBlueButton">Book a Free Consultation</a>
+                                <a href="#solutions" class="button small grey crop ae-3 fromCenter colorButton">Our Solutions</a>
+                                <a href="#contact" class="button small grey crop ae-3 fromCenter colorButton">Contact us</a>
                             </li>
                             <li class="col-6-12 left ae-1"> <img class="ipad-31 ae-4 margin-bottom-tablet-4" src="assets/img/surface_gradient_Plain.svg" width="750" alt="Report Images" data-action="zoom" /> </li>
                         </ul>
@@ -621,25 +617,25 @@
     </section>
 
     <!--<section data-name="products" data-title="products" class="slide video">-->
-    <!--<div class="content">
-        <div class="container">
-            <div class="wrap">
-                <div class="fix-12-12">
-                    <ul class="flex left verticalCenter">
-                        <li class="col-7-12 fromBottomLeft">
-                            <div class="fix-5-12 toLeft">
-                                <h1 class="smaller margin-bottom-2 ae-2">Platform</h1>
-                                <div class="ae-3">
-                                    <p class="large opacity-8">With our platform Blacksuns Attack Surface Management (ASM) automatically queries over 100 public data sources gathering actionable intelligence on IP addresses, domain names, e-mail addresses, names and more.</p>
+        <!--<div class="content">
+            <div class="container">
+                <div class="wrap">
+                    <div class="fix-12-12">
+                        <ul class="flex left verticalCenter">
+                            <li class="col-7-12 fromBottomLeft">
+                                <div class="fix-5-12 toLeft">
+                                    <h1 class="smaller margin-bottom-2 ae-2">Platform</h1>
+                                    <div class="ae-3">
+                                        <p class="large opacity-8">With our platform Blacksuns Attack Surface Management (ASM) automatically queries over 100 public data sources gathering actionable intelligence on IP addresses, domain names, e-mail addresses, names and more.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>-->
-    <!--<div>
+        </div>-->
+        <!--<div>
             <video controls="" preload="metadata" width="80%">
                 <source src="assets/videos/VolatilityEdgeONE.mp4#t=0.001" type="video/mp4" />
             </video>
@@ -658,17 +654,17 @@
 
                                 <h2 class="smaller margin-bottom-2 ae-2">Solutions</h2>
                                 <h3 class="smaller margin-bottom-2 ae-2">Volatility Edge</h3>
-                                <p class="ae-3 large light margin-bottom-3"><span class="opacity-8">Volatility Edge is The application for all your Volatility fitting needs based on the FIS Front Arena Cross Asset Trading and Risk Platform. The Volatility Edge application lets you:</span></p>
+                                <p class="ae-3 large light margin-bottom-3"><span class="opacity-8">Volatility Edge is The application for all your Volatility fitting needs based on the FIS CATR (Front Arena) platform. The Volatility Edge application lets you:</span></p>
 
                                 <ul class="items-32">
                                     <li class="fix-5-12 toLeft ae-4 margin-bottom-3">
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> Define your own volatility models in Python</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> Fit custom volatility models to real-time market data</p>
-                                        <p class="opacity-8"><i class="material-icons middle shift-up-2" style="color: #55ff99;">check_circle</i> Use your volatility in Front Arena for pricing and risk</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Define your own Volatility models in Python</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Fit custom volatility models to real-time market data</p>
+                                        <p class="opacity-8"><i class="material-icons middle shift-up-2">check_circle</i> Use your Volatility for pricing and risk</p>
 
                                     </li>
                                 </ul>
-                                <p class="ae-3 large light margin-bottom-2"><span class="opacity-8">For more information please watch the video or request a demo.</span></p>
+                                <p class="ae-3 large light margin-bottom-2"><span class="opacity-8">For more information watch the video or contact us.</span></p>
 
                             </li>
                             <li class="col-1-12"></li>
@@ -681,11 +677,12 @@
                                 </video>
                             </li>
                             <li class="col-5-12 left">
-                                <a href="mailto:hello@valana.com?subject=Volatility Edge Demo" class="button small grey crop ae-3 fromCenter dodgerBlueButton">Request a Demo</a>
+                                <a href="#services" class="button small grey crop ae-3 fromCenter colorButton">Our Services</a>
+                                <a href="#contact" class="button small grey crop ae-3 fromCenter colorButton">Contact Us</a>
 
                             </li>
                         </ul>
-
+                        
 
                         <!--<div id="canvasGlobe"></div>-->
                     </div>
@@ -699,7 +696,7 @@
 
 
     <!-- Pricings -->
-    <!--<section data-name="management" data-title="management" class="slide">
+    <section data-name="management" data-title="management" class="slide">
         <div class="content">
             <div class="container">
                 <div class="wrap">
@@ -713,6 +710,8 @@
                                         <img src="assets/img/Viking.png" class="rounded">
                                     </div>
                                     <h4 class="smaller margin-bottom-1">Viking Jacobsson</h4>
+                                    <!--<h2 class="large ae-5">$10,000</h2>-->
+
                                     <div class="ae-5">
                                         <p class="smallest uppercase bolder opacity-4">CEO</p>
                                     </div>
@@ -720,16 +719,36 @@
                                     <div class="margin-top-3 margin-bottom-3 equalElement ae-6">
                                         <ul class="p small">
                                             <p>Viking is an Engineer with over 10 years of experience of financial software solutions from clients accross the globe.</p>
+                                            <!--<li>Viking is an engineer with over 10 years </li>
+                                            <li> of experience of financial software</li>
+                                            <li>solutions from clients accross the globe.</li>-->
                                         </ul>
                                     </div>
                                 </div>
                             </li>
+                            <!--<li class="col-4-12 col-tablet-1-2 col-phablet-1-1 ae-4">
+                                <div class="pad" style="background: #F5FBFE">
+                                    <h4 class="smaller margin-bottom-1">Advance Package</h4>
+                                    <h2 class="large ae-5">$25,000</h2>
+                                    <div class="ae-6">
+                                        <p class="smallest uppercase bolder opacity-4">Per Month</p>
+                                    </div>
+                                    <div class="margin-top-3 margin-bottom-3 equalElement ae-7">
+                                        <ul class="p small">
+                                            <li><strong>Includes Internal Scans</strong></li>
+                                            <li><strong>Access to the Web Portal</strong></li>
+                                            <li><strong>Up to 1,000 devices</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>-->
                             <li class="col-6-12 col-tablet-1-2 col-phablet-1-1 ae-4">
                                 <div>
                                     <div class="ae-5 image-cropper">
                                         <img src="assets/img/AnaCropped.png" class="rounded">
                                     </div>
                                     <h4 class="smaller margin-bottom-1">Ana Janjic</h4>
+                                    <!--<h2 class="large ae-5">Quote</h2>-->
                                     <div class="ae-6">
                                         <p class="smallest uppercase bolder opacity-4">Services Director</p>
                                     </div>
@@ -737,6 +756,9 @@
                                     <div class="margin-top-3 margin-bottom-3 equalElement ae-7">
                                         <ul class="p small">
                                             <p>Ana is a PhD Level Matematician with over 5 years experience of financial software solutions from clients across the globe.</p>
+                                            <!--<li>White Labeling</li>
+                                            <li>API Access</li>
+                                            <li>Unlimted Devices</li>-->
                                         </ul>
                                     </div>
 
@@ -747,7 +769,7 @@
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
     <!-- Careers -->
     <!--<section class="slide whiteSlide" data-name="careers" data-title="Careers">
